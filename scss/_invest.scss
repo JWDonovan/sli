@@ -1,0 +1,26 @@
+.invest {
+  padding: 3em;
+  line-height: $line-height;
+  max-width: $max-width;
+  margin: 0 auto;
+  
+  .btn {
+    background-color: $green;
+    
+    &:hover {
+      background-color: $light-green;
+    }
+  }
+  
+  .invest-overview {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    line-height: 1.7em;
+  }
+  
+  .step {
+    text-align: left;
+  }
+}

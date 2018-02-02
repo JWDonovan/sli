@@ -1,0 +1,45 @@
+.calculator {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 3em;
+  line-height: $line-height;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  canvas{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+}
+
+.calculator-wrapper {
+  width: 100%;
+}
+
+.calculator-subtraction-line {
+  text-decoration: underline;
+}
+
+.calculator-total,
+.calculator-principle,
+.calculator-subtraction-line,
+.calculator-interest {
+  width: 100%;
+  text-align: center;
+}
+
+.calculator-interest {
+  font-weight: bold;
+  color: #01630C;
+  font-size: 4em;
+}
+
+.calculate-btn {
+  background-color: $green;
+  margin: 0 auto;
+  display: block;
+
+  &:hover {
+    background-color: $light-green;
+  }
+}

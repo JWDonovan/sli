@@ -1,0 +1,28 @@
+.hero {
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.relative-center {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translatey(-50%);
+  
+  .hero-title,
+  .hero-subtitle {
+    margin: 0;
+  }
+  
+  .btn {
+    background-color: $green;
+    
+    &:hover {
+      background-color: $light-green;
+    }
+  }
+}

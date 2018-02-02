@@ -1,0 +1,24 @@
+.contact {
+  max-width: $max-width;
+  line-height: $line-height;
+  margin: 0 auto;
+  padding: 3em;
+  box-sizing: border-box;
+  outline: none;
+  
+  .btn {
+    background-color: $green;
+    
+    &:hover {
+      background-color: $light-green;
+    }
+  }
+  
+  .message-wrapper {
+    margin-top: 2em;
+  }
+  
+  textarea {
+    min-height: 100px;
+  }
+}

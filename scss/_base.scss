@@ -1,4 +1,20 @@
+*,
+body,
+input,
+textarea {
+  font-family: $font;
+  font-size: $font-size;
+}
+
 body {
   margin: 0;
-  background-color: orange;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+section {
+  outline: none;
 }
