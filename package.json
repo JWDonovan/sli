@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --output-style compressed scss/main.scss > static/main.css",
-    "watch-scss": "nodemon -e scss -x \"npm run scss\""
+    "watch-scss": "nodemon -e scss -x \"npm run scss\"",
+    "js": "webpack",
+    "watch-js": "nodemon -e js -x \"npm run js\""
   },
   "repository": {
     "type": "git",
