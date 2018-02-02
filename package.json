@@ -1,0 +1,25 @@
+{
+  "name": "sli",
+  "version": "0.0.2",
+  "description": "Website for Stop-Loss Investments LLC.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --output-style compressed scss/main.scss > static/main.css",
+    "watch-scss": "nodemon -e scss -x \"npm run scss\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JWDonovan/sli.git"
+  },
+  "author": "James Donovan <jameswilliamdonovan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JWDonovan/sli/issues"
+  },
+  "homepage": "https://github.com/JWDonovan/sli#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.14.12"
+  }
+}
