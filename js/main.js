@@ -16,36 +16,36 @@ $('.datepicker').pickadate({
 
 // smooth scroll: https://css-tricks.com/snippets/jquery/smooth-scrolling/
 $('a[href*="#"]')
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      
-      $('#sidenav-overlay').click();
-      
-      if (target.length) {
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          var $target = $(target);
+.not('[href="#"]')
+.not('[href="#0"]')
+.click(function(event) {
+  if (
+    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+    && 
+    location.hostname == this.hostname
+  ) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    
+    $('#sidenav-overlay').click();
+    
+    if (target.length) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000, function() {
+        var $target = $(target);
+        $target.focus();
+        if ($target.is(":focus")) {
+          return false;
+        } else {
+          $target.attr('tabindex','-1');
           $target.focus();
-          if ($target.is(":focus")) {
-            return false;
-          } else {
-            $target.attr('tabindex','-1');
-            $target.focus();
-          };
-        });
-      }
+        };
+      });
     }
-  });
+  }
+});
 
 // scroll reveal: https://github.com/jlmakes/scrollreveal
 window.sr = ScrollReveal();
