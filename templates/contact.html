@@ -1,0 +1,29 @@
+<form class="contact" action="/contact.py" method="post" id="contact">
+  <h5 class="section-title">Have Any Other Questions? Send Us A Message!</h5>
+  <div class="input-field">
+    <input class="validate" type="text" required="required" id="name"/>
+    <label for="name">Name</label>
+  </div>
+  <div class="input-field">
+    <input class="validate" type="text" id="email"/>
+    <label for="email">Email</label>
+  </div>
+  <div class="input-field">
+    <input class="validate" type="text" id="phone"/>
+    <label for="phone">Phone</label>
+  </div>
+  <p>Preferred Contact</p>
+  <p>
+    <input name="preferred-contact" type="radio" checked="checked" id="test1"/>
+    <label for="test1">Email</label>
+  </p>
+  <p>
+    <input name="preferred-contact" type="radio" id="test2"/>
+    <label for="test2">Phone</label>
+  </p>
+  <div class="input-field message-wrapper">
+    <textarea class="validate materialize-textarea" name="body" id="body"></textarea>
+    <label class="textarea-label" for="body">Message</label>
+  </div>
+  <input class="btn waves-effect" type="submit" value="Send" onclick="alert('Coming Soon');"/>
+</form>
